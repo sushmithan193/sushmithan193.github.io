@@ -1,6 +1,7 @@
 body {
     padding-left: 20%;
     padding-right: 20%;
+    background-color: antiquewhite;
 }
 
 h1 {
@@ -8,6 +9,7 @@ h1 {
     text-align: center;
    letter-spacing: 4px;
    font-family: sans-serif;
+   color: brown;
 }
 
 h2 {
@@ -17,12 +19,14 @@ h2 {
    text-align: center;
    line-height: 1.4;
    text-transform: uppercase;
-   font-weight: normal;     
+   font-weight: normal;  
+   color: brown;   
 }
 
 h3 {
     font-size: 32px;
     margin-bottom: 4px;
+    color: brown;
 }
 
 p {
