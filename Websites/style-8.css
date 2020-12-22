@@ -8,7 +8,7 @@ body {
 
 /* Main heading */
 h1 {
-	font-family: serif;
+	font-family: 'Domine', serif;
 	font-weight: bold;
 	font-size: 54px;
     letter-spacing: -1px;
@@ -19,7 +19,7 @@ h1 {
 
 /* Small headings */
 h2 {
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     color: rgb(91,86,154);    
     font-size: 32px;
@@ -30,7 +30,7 @@ h2 {
 
 /* Smaller headings */
 h3 {
-	font-family: serif;
+	font-family: 'Domine', serif;
     font-weight: bold;
     font-size: 48px;
     color: rgb(91,86,154);
@@ -40,7 +40,7 @@ h3 {
 
 /* Text paragraphs */
 p {
-   font-family: sans-serif;
+   font-family: 'PT Sans' sans-serif;
    font-weight: normal;
    font-size: 22px;
    line-height: 1.6;
