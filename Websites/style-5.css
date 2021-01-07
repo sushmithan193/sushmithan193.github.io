@@ -1,6 +1,8 @@
-/* Browser resets */
-img { 
-    display: block; width: 100%; height: auto;} 
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+html { height: 100% }
+body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: auto }  
+img { width: 100%; height: auto; display: block }
 
     /* Images */
     img{
@@ -8,19 +10,21 @@ img {
         box-shadow: 8px 10px 8px #888
     }
 
-/* Web page */
-body {
-    background-color: #FFFFBD;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom:40px;
-   
-}
+/* ========== PAGE CONTAINER ========= */
+
+/* All screen sizes */
+body { background-color: #FFFFBD }
+
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20% } }
+
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 11% 9% } }
 
 /* Main heading */
 h1 {
     font-family: 'Merriweather', serif;    
-    font-size: 84px;
+    font-size: calc(44px + (84 - 44) * ((100vw - 320px) / (1600 - 320)));
     font-weight: normal;
     color: #3434B0;
     letter-spacing: -2px;
@@ -31,7 +35,7 @@ h1 {
 /* Small headings */
 h2 {
     font-family:'Merriweather', serif;    
-    font-size: 26px;
+    font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320)));
     color:#3434B0;
     line-height: 1.4;
     margin-bottom: 4px;
@@ -40,7 +44,7 @@ h2 {
 /* Smaller headings */
 h3 {
     font-family:'Merriweather', serif;    
-    font-size: 42px;
+    font-size: calc(26px + (42 - 26) * ((100vw - 320px) / (1600 - 320)));
     color: #000;
     letter-spacing:-2px;
     margin-top: 56px;
@@ -50,12 +54,30 @@ h3 {
 /* Text paragraphs */
 p {
     font-family:'Merriweather', serif;
-    font-size: 22px;
+    font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1600 - 320)));
     color: #455C80;
     line-height: 1.6;
     margin-top: 0;
     margin-bottom: 22px;
 }
 
+/* ====== FANCY HYPERLINKS ====== */
 
+/* Passive link styles */
+
+a.fancy-link:link, a.fancy-link:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: #000;
+   border-bottom: solid 2px #000;
+ } 
+ 
+ /* Interactive link styles */
+ 
+ a.fancy-link:hover, a.fancy-link:focus, a.fancy-link:active {
+    text-decoration: none; 
+    padding-bottom: 2px;
+    color: #f26f21;
+   border-bottom: solid 2px blue;
+ }
 
