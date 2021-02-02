@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushmitha Nagaraju | Web Designer and Tester | Home Page</title>
+    <title>Sushmitha Nagaraju | Web Designer | Home Page</title>
     <meta name="description" content="I create digital experiences to promote products, services and events.">
-    <!--
-    <meta name="description" content="I use HTML, CSS and JavaScript with graphic design and animation to bring your ideas to life.">
-    -->
-    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <link rel="preload" href="assets/videos/hero-home.jpg" as="image"> 
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -18,9 +23,28 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/global.css">
 
+
     <!-- Link to icons for Font Awesome 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
-    
+
+	<!-- Styles for Cookie Consent Popup Message  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <script>
+        var bgvideo = document.getElementById("bg-video");
+        bgvideo.muted = true;
+        bgvideo.play();
+    </script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GGGGGG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'GGGGGG');
+    </script>   
+
 </head>
 
 <body>
@@ -31,7 +55,7 @@
 
             <!-- Website logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/website-logo.png" width="200" height="40"  alt="Website logo">
+                <img src="assets/img/home-page-image.jpg" width="200" height="40"  alt="Website logo">
             </a>
 
             <!-- Hamburger icon -->
@@ -45,11 +69,12 @@
                 <ul class="navbar-nav ml-auto">
                    <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
                    <li class="nav-item"><a class="nav-link" href="javascript/">JavaScript</a></li>
-                  <li class="nav-item"><a class="nav-link" href="wordpress/">WordPress</a></li>
+                   <li class="nav-item"><a class="nav-link" href="wordpress/">WordPress</a></li>
+                   <li class="nav-item"><a class="nav-link" href="about-me/">About Me</a></li>
   
                     <!-- Call to action button-->
                     <li class="nav-item">
-                        <a class="btn btn-primary" href="contact/" role="button">
+                        <a class="btn btn-danger" href="contact/" role="button">
                             <i class="far fa-envelope"></i> &nbsp;&nbsp;Contact
                         </a>
                     </li>
@@ -62,8 +87,8 @@
     <div class="container-fluid hero-block hero-10">
     
         <!-- Background video --->
-        <video loop muted autoplay poster="assets/videos/hero-video-poster.jpg" class="background-video">
-                <source src="assets/videos/home-video.mp4" type="video/mp4">
+        <video loop muted autoplay playsinline poster="assets/videos/hero-home.jpg" class="background-video" id="bg-video">
+            <source src="assets/videos/home-video.mp4" type="video/mp4">
         </video>
     
         <!-- Optional overlay --->
@@ -71,10 +96,11 @@
 
         <!-- Hero block content --->
         <div class="background-video-content">
-            <h1>Sushmitha Nagaraju</h1>
+            
+            <h1>Sushmitha Nagarju</h1>
             <h2>Web Designer</h2>
       
-            <!-- Buttons start here -->
+            
             <div class="row">
                 <div class="col-md-6 col-xs-12">
                     <a class="btn btn-primary btn-lg" href="portfolio/" role="button"><i class="fas fa-pencil-ruler"></i> &nbsp;&nbsp;Portfolio</a>
@@ -83,7 +109,7 @@
                     <a class="btn btn-primary btn-lg" href="contact/" role="button"><i class="far fa-envelope"></i> &nbsp;&nbsp;Contact</a>
                 </div>	
             </div>
-            <!-- Buttons end here -->            
+                  
         </div>
 	</div>
 
@@ -91,7 +117,7 @@
 
         <h1>Recent projects</h1>
 
-        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/">portfolio</a> and my <a href="assets/pdfs/cv-sample.pdf">CV</a>.</p>
+        <p>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/" class="fancy-link">portfolio</a> and my <a href="assets/pdfs/sushmitha-nagaraju-cv.pdf">CV</a>.</p>
         
         <p>Have a project you'd like to discuss? <a href="contact/">Let's make something great together</a>.</p>
     </div>
@@ -111,35 +137,16 @@
 
         <ul class="footer-icons">
             <li>
-                <a href="#">
+                <a href="www.linkedin.com/in/sushmitha-nagaraju-b14512185">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
 
             <li>
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
+                <a href="sushmithan193.github.io">
                     <i class="fab fa-github"></i>
                 </a>
-            </li>
-
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            
+            </li>            
          </ul>                
         
         <a class="privacy-legal" href="privacy.html">Privacy & Legal</a>
@@ -153,5 +160,23 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#000"
+        },
+        "button": {
+        "background": "#f1d600"
+        }
+    },
+    "content": {
+        "href": "https://mywesite.github.io/privacy.html"
+    }
+    });
+    </script>
+        
 </body>
 </html>
+
