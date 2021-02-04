@@ -40,10 +40,12 @@ footer a.privacy-legal { font-family: sans-serif }
 #mainNav .container img { margin-bottom: 0 }
 
 /* Menu: dark colour */
-nav.navbar.navbar-dark.bg-dark { background-color: darkblue !important }
+nav.navbar.navbar-dark.bg-dark { background-color: #009B90 !important }
+/* nav.navbar.navbar-dark.bg-dark { background-color: darkblue !important } */
 
 /* Menu: light colour */
-nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
+nav.navbar.navbar-light.bg-light { background-color: #47EBE0 !important }
+/* nav.navbar.navbar-light.bg-light { background-color: lightblue !important } */
 
 /* Hamburger icon */
 #mainNav.navbar-dark.bg-dark i.fas.fa-bars { font-size: xx-large }
@@ -245,7 +247,8 @@ nav.navbar.navbar-light.bg-light { background-color: lightblue !important }
 footer { 
     text-align: center; 
     color:#fff;
-    background-color:rgb(36,64,84);
+    background-color: #009B90;
+    /* background-color:rgb(36,64,84); */
 }
 
 /* Desktop footer - inside padding  */
